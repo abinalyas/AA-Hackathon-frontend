@@ -1,0 +1,30 @@
+<div class="w-100 d-flex justify-content-center login-container">
+    <div class="align-self-center d-flex flex-column justify-content-center align-items-center login-card">
+
+        <span class="text-uppercase">login</span>
+
+        <br />
+        <span class="align-self-baseline">Username</span>
+        <input type='email' name='email' [(ngModel)]='userModel.email'>
+
+        <br/>
+        <span class="align-self-baseline">Password</span>
+        <input class="input" type='password' name='password' [(ngModel)]='userModel.password' >
+        
+        <br/>
+<!-- 
+        <span class="p-4">
+            <span class="n-btn1">
+                <span class="n-btn2">
+                    <span class="n-btn3">
+                        Login
+                    </span>
+                </span>
+            </span>
+        </span> -->
+
+        <button class="btn btn-primary mt-4" (click)="login()">Login</button>
+    </div>
+</div>
+
+

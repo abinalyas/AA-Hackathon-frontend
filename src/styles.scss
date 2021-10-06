@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+// default colors
+body,html {
+    --color: #CCC;
+    --backgroundColor: #f6f8fb;
+    --loginColor: #FFF;
+    --loginBackground: #01bf86;
+    --cardColor: #394453;
+    --cardBackground: #fbfbfb;
+    --buttonColor: #ffffff;
+    --buttonBackground: #01bf86;
+    --navColor: #01bf86;
+    --navBackground: #ffffff;
+}
+// pass variables into a sass map
+$variables: (
+    --cardColor: var(--cardColor),
+    --cardBackground: var(--cardBackground),
+    --buttonColor: var(--buttonColor),
+    --buttonBackground: var(--buttonBackground),
+    --navColor: var(--navColor),
+    --navBackground: var(--navBackground),
+    --footerColor: var(--footerColor),
+    --footerBackground: var(--footerBackground),
+    --footerAlignment: var(--footerAlignment)
+);
+
+@function var($variable) {
+    @return map-get($variables, $variable);
+}

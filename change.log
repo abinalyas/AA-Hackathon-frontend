@@ -1,0 +1,23 @@
+7. v0.0.1.003 20200219 #NJ
+    + Implemented micro architecture (backend & frontend seperated)
+    
+6. v0.0.1.002 20200218 #NJ
+    + Added DB dump
+    
+5. v0.0.1.001 20200218 #NJ
+    + Added new components (Body, Footer)
+    + Version 1 template completed
+
+4. v0.0.0.004 20200217 #NJ
+    + Added new components (Main, Header, Sidebar & Table)
+    + Added Theming 
+
+3. v0.0.0.003 20200214 #NJ
+    + Basic authentication completed(passport js)
+
+2. v0.0.0.002 20200213 #NJ
+    + Updated template frontend application (angular 9)
+    + Added backend (ts-node) 
+
+1. v0.0.0.001 20200212 #NJ
+    + Template application created (angular 8) 
