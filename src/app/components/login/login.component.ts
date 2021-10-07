@@ -19,9 +19,11 @@ export class LoginComponent implements OnInit {
 
   userModel = {
     name:"",
+    businessName:"",
     email: "name@email.com",
     phone: "",
-    industryType: ""
+    industryType: "",
+    password: ""
   }
 
   ngOnInit(): void {

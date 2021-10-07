@@ -11,22 +11,29 @@
                 Already have an account? <span class="heighlight">Login</span>
             </div>
             <div class="w-100">
-                <div class="py-3">
+                <div class="py-2">
                     <div class="align-self-baseline">Name<span class="heighlight">*</span></div>
                     <input class="" type='text' name='name' [(ngModel)]='userModel.name'>
                 </div>
-                <div class="py-3">
+                <div class="py-2">
+                    <div class="align-self-baseline">Business Name<span class="heighlight">*</span></div>
+                    <input class="" type='text' name='businessName' [(ngModel)]='userModel.businessName'>
+                </div>
+                <div class="py-2">
                     <div class="align-self-baseline">Email<span class="heighlight">*</span></div>
                     <input class="input" type='email' name='email' [(ngModel)]='userModel.email' >
-                    
                 </div>
-                <div class="py-3">
+                <div class="py-2">
                     <div class="align-self-baseline">Phone<span class="heighlight">*</span></div>
                     <input class="input" type='number' name='phone' [(ngModel)]='userModel.phone' >
                 </div>
-                <div class="py-3">
+                <div class="py-2">
                     <div class="align-self-baseline">Industry Type</div>
                     <input class="input" type='text' name='industryType' [(ngModel)]='userModel.industryType' >
+                </div>
+                <div class="py-2">
+                    <div class="align-self-baseline">Password</div>
+                    <input class="input" type='password' name='password' [(ngModel)]='userModel.password' >
                 </div>
                 <button class="btn btn-primary mt-4" (click)="login()">Register</button>
             </div>
