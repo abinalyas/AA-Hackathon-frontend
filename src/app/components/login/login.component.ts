@@ -17,6 +17,8 @@ export class LoginComponent implements OnInit {
     private cookie: CookiesService,
   ) { }
 
+  verify = false;
+
   userModel = {
     name:"",
     businessName:"",
@@ -28,6 +30,15 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
 
+  }
+
+  register(){
+    this.verify = true;
+  }
+
+  verifyCheck()
+  {
+    this.route.navigateByUrl('home');
   }
 
   login(){

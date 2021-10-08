@@ -1,6 +1,6 @@
 <div class="d-flex login-container">
     <div class="col-4 d-flex justify-content-center align-items-center">
-        <div class="px-5 w-100">
+        <div *ngIf="!verify" class="px-5 w-100">
             <div class="py-3">
                 <img src="assets/datafy.png">
             </div>
@@ -35,7 +35,29 @@
                     <div class="align-self-baseline">Password</div>
                     <input class="input" type='password' name='password' [(ngModel)]='userModel.password' >
                 </div>
-                <button class="btn btn-primary mt-4" (click)="login()">Register</button>
+                <button class="btn btn-primary mt-4" (click)="register()">Register</button>
+            </div>
+            
+            <div class="py-2 px-3 text-center">By signing up, you are agreeing to our <span class="heighlight">Terms & Conditions</span> and <span class="heighlight">Privacy Policy.</span></div>
+        </div>
+        <div *ngIf="verify" class="px-5 w-100">
+            <div class="py-3">
+                <img src="assets/datafy.png">
+            </div>
+            <div class="welcome-text py-2">
+                Welcome to Datafly!
+            </div>
+            
+            <div class="w-100">
+                <div class="py-2">
+                    <div class="align-self-baseline">Name<span class="heighlight">*</span></div>
+                    <input class="" type='text' name='name' [(ngModel)]='userModel.name'>
+                </div>
+                <div class="py-2">
+                    <div class="align-self-baseline">Name<span class="heighlight">*</span></div>
+                    <input class="" type='text' name='name' [(ngModel)]='userModel.name'>
+                </div>
+                <button class="btn btn-primary mt-4" (click)="verifyCheck()">Verify</button>
             </div>
             
             <div class="py-2 px-3 text-center">By signing up, you are agreeing to our <span class="heighlight">Terms & Conditions</span> and <span class="heighlight">Privacy Policy.</span></div>
